@@ -33,3 +33,6 @@ todo el tablero, no solo las células vivas.
 Y con la imagen podemos observar como el tiempo va incrementando de pasos según el tamaño del ta
 blero seleccionado, a pura y simple vista, yo creo que el cálculo de su O grande sería un O(n2).
 
+## Tarea 2
+
+
