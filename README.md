@@ -1,4 +1,4 @@
-# Compu-pararela-tarea 1
+# Compu pararela-tarea 1
 
 Lo primero que hay que empezar mencionando sobre este código es se implmentaron los patrones clásicos de glider como toad. Estos patrones, la forma o estruc
 tura de ellos están en unos archivos TXT del mismo nombre en esta carpeta y son necesarios para que en el código cuando se decida si hacerlo de forma random
