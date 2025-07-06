@@ -1,0 +1,15 @@
+#código parte 1
+import pstats
+
+def simulacion_step():
+     juego = JuegoDeLaVida(rows=512, cols=512)
+     for i in range(100): # qui están los 100 pasos
+         juego.step()
+
+    with open("resumen_cprofile.txt", "w") as pruebaStep:
+        profiler = cProfile.Profile()
+        profiler.enable()
+        #simulacion_step()
+        #profiler.disable()
+        #stats = pstats.Stats(profiler, stream=pruebaStep)
+        #stats.strip_dirs().sort_stats("cumtime").print_stats(30)
