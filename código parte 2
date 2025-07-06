@@ -1,0 +1,9 @@
+import pstats
+
+def simulacion_step():
+     juego = JuegoDeLaVida(rows=512, cols=512)
+     for i in range(100): # qui están los 100 pasos
+         juego.step()
+
+if __name__ == "__main__":
+    simulacion_step()
