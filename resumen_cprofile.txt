@@ -1,0 +1,38 @@
+         29073 function calls (27073 primitive calls) in 1.383 seconds
+
+   Ordered by: cumulative time
+   List reduced from 79 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.020    0.020    1.383    1.383 conway.30.py:184(simulacion_representativa)
+      100    0.156    0.002    1.353    0.014 conway.30.py:92(step)
+      100    0.407    0.004    1.088    0.011 {built-in method builtins.sum}
+3801/1801    0.029    0.000    0.715    0.000 {built-in method numpy.core._multiarray_umath.implement_array_function}
+      900    0.024    0.000    0.681    0.001 conway.30.py:97(<genexpr>)
+     1600    0.004    0.000    0.656    0.000 <__array_function__ internals>:177(roll)
+     1600    0.617    0.000    0.645    0.000 numeric.py:1147(roll)
+      100    0.001    0.000    0.055    0.001 <__array_function__ internals>:177(pad)
+      100    0.003    0.000    0.054    0.001 arraypad.py:529(pad)
+      100    0.045    0.000    0.045    0.000 {method 'astype' of 'numpy.ndarray' objects}
+      100    0.041    0.000    0.043    0.000 arraypad.py:86(_pad_simple)
+     1700    0.002    0.000    0.016    0.000 <__array_function__ internals>:177(empty_like)
+        1    0.010    0.010    0.010    0.010 {method 'choice' of 'numpy.random.mtrand.RandomState' objects}
+     1600    0.007    0.000    0.010    0.000 numeric.py:1348(normalize_axis_tuple)
+      100    0.000    0.000    0.009    0.000 <__array_function__ internals>:177(zeros_like)
+      100    0.001    0.000    0.008    0.000 numeric.py:77(zeros_like)
+      100    0.000    0.000    0.006    0.000 <__array_function__ internals>:177(copyto)
+      200    0.002    0.000    0.005    0.000 arraypad.py:454(_as_pairs)
+     1600    0.002    0.000    0.002    0.000 numeric.py:1398(<listcomp>)
+      100    0.000    0.000    0.002    0.000 <__array_function__ internals>:177(round_)
+      200    0.001    0.000    0.002    0.000 arraypad.py:129(_set_pad_area)
+      303    0.001    0.000    0.001    0.000 {built-in method numpy.array}
+      100    0.000    0.000    0.001    0.000 fromnumeric.py:3754(round_)
+     1600    0.001    0.000    0.001    0.000 numeric.py:1234(<dictcomp>)
+      100    0.001    0.000    0.001    0.000 {built-in method numpy.empty}
+      100    0.000    0.000    0.001    0.000 <__array_function__ internals>:177(around)
+      100    0.000    0.000    0.001    0.000 fromnumeric.py:3245(around)
+     1600    0.001    0.000    0.001    0.000 {built-in method numpy.core._multiarray_umath.normalize_axis_index}
+     1600    0.001    0.000    0.001    0.000 {built-in method numpy.asanyarray}
+      100    0.000    0.000    0.001    0.000 fromnumeric.py:51(_wrapfunc)
+
+
