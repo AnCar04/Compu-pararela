@@ -34,5 +34,6 @@ Y con la imagen podemos observar como el tiempo va incrementando de pasos según
 blero seleccionado, a pura y simple vista, yo creo que el cálculo de su O grande sería un O(n2).
 
 ## Tarea 2
+El código para el escalamiento fuerte quedó en el archivo original, mientras que para el débil en el nuevo py adjunto llamado escala_débil.py
 
 
