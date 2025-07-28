@@ -42,6 +42,23 @@ parte a: mpiexec -n (cualquier número) python "mpiParteA andres calvo.py"
 
 parte b: mpiexec -n 2 python "mpiParteB andres calvo.py"
 
+Con respecto a los resultados de los 'run' de cada archivo, en la parte A se puso a ejecutar dos veces y dió dos resultados diferentes:
+
+[Proceso 0] Estadφsticas Globales:
+mφnimo: 0.0000
+mßximo: 100.0000
+promedio: 50.0071
+
+[Proceso 0] Estadφsticas Globales:
+mφnimo: 0.0001
+mßximo: 99.9997
+promedio: 49.9797
+
+
+Estos 2 resultados en general son demasiado similares, los mínimos son casi iguales, los máximo igual y el promedio que debería ser 50 también es prácticamente igual, sin embargo,
+no son exactos. La causa de esto es por el uso de esta función de numpy:  self.datos = np.random.uniform(0, 100, self.N) que hace números aleatorios en ese rango(0-100).
+A pesar de no ser exactos en cada run, siguen siendo similiares y lógicos dado los parámetros de los requisitos.
+
 
 
 
