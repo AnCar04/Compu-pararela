@@ -39,6 +39,7 @@ El código para el escalamiento fuerte quedó en el archivo original, mientras q
 ## Tarea 3
 ### Instrucciones de compilación
 parte a: mpiexec -n (cualquier número) python "mpiParteA andres calvo.py"
+
 parte b: mpiexec -n 2 python "mpiParteB andres calvo.py"
 
 
