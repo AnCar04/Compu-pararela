@@ -49,9 +49,9 @@ class EstadisticasMPI:
         if self.rank == 0:
             global_avg = global_sum / self.N
             print(f"[Proceso 0] Estadísticas Globales:")
-            print(f"mínimo: {global_min:.4f}")
-            print(f"máximo: {global_max:.4f}")
-            print(f"promedio: {global_avg:.4f}")
+            print(f"mínimo: {global_min}")
+            print(f"máximo: {global_max}")
+            print(f"promedio: {global_avg}")
 
 if __name__ == "__main__":
     app = EstadisticasMPI(N=1000000)
