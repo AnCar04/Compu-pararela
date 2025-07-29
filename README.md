@@ -41,6 +41,7 @@ El código para el escalamiento fuerte quedó en el archivo original, mientras q
 parte a: mpiexec -n (cualquier número) python "mpiParteA andres calvo.py"
 
 parte b: mpiexec -n 2 python "mpiParteB andres calvo.py"
+### Resultados.
 
 Con respecto a los resultados de los 'run' de cada archivo, en la parte A se puso a ejecutar dos veces y dió dos resultados diferentes:
 
@@ -59,6 +60,21 @@ Estos 2 resultados en general son demasiado similares, los mínimos son casi igu
 no son exactos. La causa de esto es por el uso de esta función de numpy:  self.datos = np.random.uniform(0, 100, self.N) que hace números aleatorios en ese rango(0-100).
 A pesar de no ser exactos en cada run, siguen siendo similiares y lógicos dado los parámetros de los requisitos.
 
+
+Para la parte B, se obtuvieron estos reusltados:
+
+
+Mensaje de 1 byte transmitido 10000 veces.
+Latencia promedio por mensaje (ida y vuelta): 2.3677 microsegundos
+Latencia estimada unidireccional: 1.1807 microsegundos
+
+
+Mensaje de 1 byte transmitido 10000 veces.
+Latencia promedio por mensaje (ida y vuelta): 2.3880 microsegundos
+Latencia estimada unidireccional: 1.1940 microsegundos
+
+
+Que similarmente a la parte A, aquí los tiempos no son ni exactos ni tan parecidos a los anteriores, pero siguen siendo similiares, sin diferencias mayores entre las latencias.
 
 
 
