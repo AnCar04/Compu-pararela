@@ -75,6 +75,6 @@ Latencia estimada unidireccional: 1.1940 microsegundos
 
 
 Que similarmente a la parte A, aquí los tiempos no son ni exactos ni tan parecidos a los anteriores, pero siguen siendo similiares, sin diferencias mayores entre las latencias.
-
-
-
+tarea 4* A pesar de que son tiempos similares, una posible razón de la diferencia entre latencias puede ser por la localización de los datos, ya sea porque están en CPU o GPU(lo más probable es que en cpu), que la latencia de acceso a los datos varía significativamente dependiendo de su ubicación física en el equipo. Si los datos ya están en la caché del GPU, el acceso es rápido, sin embargo, si los datos deben ser transferidos entre el CPU y su memoria principal a la Gpu, puede que la latencia aumente considerablemente.
+En este caso, como no parece haber demasiada diferencia, esto puede ser porque los datos/procesos están ubicados en el caché el cual es de acceso rápido o porque su 'trabajo' era demasiado ligero. Como solo hay 2 procesos de comunicación que son el rank 0 y 1, no hay múltiples rutas de comunicación ni sincronización entre varios procesos, reduciendo así no solo el tiempo de ejecución sino de coordinación de MPI.
+Otro factor es el tamaño del mensaje, el cual es únicamente de 1 solo byte, si el tamaño del mensaje fuera mayor también puede influir a tener más latencia. Entonces es posible que si el código que cambiara el tamaño del mensaje, incluso la cantidad de mensajes y su número de procesos utilizados, la latencia varie según el proceso general.
